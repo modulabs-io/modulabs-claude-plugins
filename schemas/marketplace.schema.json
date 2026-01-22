@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/modulabs-io/modulabs-claude-plugins/schemas/marketplace.schema.json",
+  "title": "Claude Plugin Marketplace",
+  "description": "Schema for the Claude Plugin Marketplace registry",
+  "type": "object",
+  "required": [
+    "name",
+    "owner",
+    "metadata",
+    "plugins"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the marketplace"
+    },
+    "owner": {
+      "type": "object",
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the marketplace owner/organization"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Contact email for the marketplace"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "description",
+        "version"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Description of the marketplace"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Semantic version of the marketplace"
+        }
+      }
+    },
+    "plugins": {
+      "type": "array",
+      "description": "Array of plugin entries",
+      "items": {
+        "$ref": "#/$defs/plugin"
+      }
+    }
+  },
+  "$defs": {
+    "plugin": {
+      "type": "object",
+      "required": [
+        "name",
+        "source",
+        "description",
+        "version"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "Plugin name in kebab-case"
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "source",
+            "repo"
+          ],
+          "properties": {
+            "source": {
+              "type": "string",
+              "enum": [
+                "github"
+              ],
+              "description": "Source type (currently only github supported)"
+            },
+            "repo": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9_-]+/[a-zA-Z0-9_.-]+$",
+              "description": "Repository in owner/repo format"
+            },
+            "ref": {
+              "type": "string",
+              "description": "Git ref (tag, branch, or commit)"
+            }
+          }
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "Short description of the plugin"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+(-[a-zA-Z0-9.]+)?$",
+          "description": "Semantic version of the plugin"
+        },
+        "author": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Author name"
+            },
+            "email": {
+              "type": "string",
+              "format": "email",
+              "description": "Author email"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Author website"
+            }
+          }
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords for search/categorization"
+        },
+        "license": {
+          "type": "string",
+          "description": "SPDX license identifier"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "skill",
+            "command",
+            "agent",
+            "mcp-server",
+            "hook",
+            "lsp-server"
+          ],
+          "description": "Type of plugin"
+        }
+      }
+    }
+  }
+}

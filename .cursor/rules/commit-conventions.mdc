@@ -1,0 +1,16 @@
+---
+description: Conventional commits for this project
+globs:
+alwaysApply: true
+---
+
+# Commit Convention
+
+All commits must follow conventional commits specification.
+
+Format: `<type>(<scope>): <description>`
+
+Valid types: feat, fix, docs, style, refactor, perf, test, chore, ci
+
+- feat/fix trigger version bumps
+- Use `!` for breaking changes: `feat!: description`

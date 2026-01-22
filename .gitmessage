@@ -1,0 +1,18 @@
+# <type>(<scope>): <subject>
+#
+# Types: feat, fix, docs, style, refactor, perf, test, chore, ci
+#
+# feat: New feature (MINOR version bump)
+# fix: Bug fix (PATCH version bump)
+# docs: Documentation only
+# style: Formatting, no code change
+# refactor: Code change, no feature/fix
+# perf: Performance improvement
+# test: Adding/updating tests
+# chore: Maintenance tasks
+# ci: CI/CD changes
+#
+# Breaking changes: Add ! after type or BREAKING CHANGE: in footer
+# Example: feat!: remove deprecated API
+#
+# Keep subject line under 50 chars, wrap body at 72 chars

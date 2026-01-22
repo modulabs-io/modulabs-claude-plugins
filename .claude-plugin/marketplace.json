@@ -1,0 +1,12 @@
+{
+  "name": "modulabs-claude-plugins",
+  "owner": {
+    "name": "Modulabs",
+    "email": "contact@modulabs.io"
+  },
+  "metadata": {
+    "description": "Community marketplace for Claude Code plugins",
+    "version": "1.0.0"
+  },
+  "plugins": []
+}
