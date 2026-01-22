@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/modulabs-io/modulabs-claude-plugins/compare/v1.1.0...v1.1.1) (2026-01-22)
+
+
+### Bug Fixes
+
+* **skills:** update README when adding plugins ([38a4540](https://github.com/modulabs-io/modulabs-claude-plugins/commit/38a45400c8bde88dc86ec7e7f44974a79230969f))
+
 ## [1.1.0](https://github.com/modulabs-io/modulabs-claude-plugins/compare/v1.0.0...v1.1.0) (2026-01-22)
 
 
