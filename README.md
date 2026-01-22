@@ -30,7 +30,7 @@ This is a **registry-only** repository. It does not contain plugin code - instea
 
 | Name | Description | Type | Repository |
 |------|-------------|------|------------|
-| *None yet* | *Be the first to submit a plugin!* | - | - |
+| [flutter-developer](https://github.com/modulabs-io/flutter-developer-plugin) | Comprehensive Flutter development plugin for Claude Code | plugin | [modulabs-io/flutter-developer-plugin](https://github.com/modulabs-io/flutter-developer-plugin) |
 
 ## Plugin Types
 

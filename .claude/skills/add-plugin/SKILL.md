@@ -172,26 +172,48 @@ Use the Edit tool to add the new plugin entry to `.claude-plugin/marketplace.jso
 
 Add the new entry to the `plugins` array. Maintain proper JSON formatting with 2-space indentation.
 
-### Step 8: Validate JSON
+### Step 8: Update README.md
+
+Update the "Available Plugins" table in README.md to include the new plugin.
+
+Read the README.md file and find the table under "## Available Plugins". The table format is:
+
+```markdown
+| Name | Description | Type | Repository |
+|------|-------------|------|------------|
+```
+
+Add a new row for the plugin:
+
+```markdown
+| [{name}](https://github.com/{owner}/{repo}) | {short description} | {type} | [{owner}/{repo}](https://github.com/{owner}/{repo}) |
+```
+
+Notes:
+- If the table contains the placeholder row `| *None yet* | *Be the first to submit a plugin!* | - | - |`, remove it before adding the new plugin
+- Keep the description concise (truncate if longer than 60 characters)
+- Sort entries alphabetically by name if there are multiple plugins
+
+### Step 9: Validate JSON
 
 Run validation to ensure the JSON is valid:
 
 ```bash
-python -m json.tool .claude-plugin/marketplace.json > /dev/null && echo "Valid JSON"
+python3 -m json.tool .claude-plugin/marketplace.json > /dev/null && echo "Valid JSON"
 ```
 
 If validation fails, fix the JSON formatting issue and retry.
 
-### Step 9: Auto-Commit
+### Step 10: Auto-Commit
 
 Stage and commit the changes:
 
 ```bash
-git add .claude-plugin/marketplace.json
+git add .claude-plugin/marketplace.json README.md
 git commit -m "feat: add plugin {name}"
 ```
 
-### Step 10: Success Output
+### Step 11: Success Output
 
 Display a success message:
 
@@ -231,6 +253,7 @@ User runs: `/add-plugin anthropics/example-plugin`
 5. Verify LICENSE exists
 6. Check no duplicate in marketplace.json
 7. Add entry to marketplace.json
-8. Validate JSON
-9. Commit changes
-10. Show success message
+8. Update README.md plugins table
+9. Validate JSON
+10. Commit changes
+11. Show success message
