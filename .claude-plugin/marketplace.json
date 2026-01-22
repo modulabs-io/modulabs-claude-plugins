@@ -8,5 +8,38 @@
     "description": "Community marketplace for Claude Code plugins",
     "version": "1.0.0"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "flutter-developer",
+      "source": {
+        "source": "github",
+        "repo": "modulabs-io/flutter-developer-plugin",
+        "ref": "v1.1.0"
+      },
+      "description": "Comprehensive Flutter development plugin for Claude Code - supports desktop (Windows, macOS, Linux) and mobile (iOS, Android) development with Firebase, Supabase, and all major state management solutions",
+      "version": "1.1.0",
+      "author": {
+        "name": "Modulabs",
+        "email": "dev@modulabs.io"
+      },
+      "keywords": [
+        "flutter",
+        "dart",
+        "mobile",
+        "desktop",
+        "ios",
+        "android",
+        "macos",
+        "windows",
+        "linux",
+        "firebase",
+        "supabase",
+        "riverpod",
+        "bloc",
+        "provider"
+      ],
+      "license": "MIT",
+      "type": "plugin"
+    }
+  ]
 }
