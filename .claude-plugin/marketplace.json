@@ -38,7 +38,7 @@
         "rxjs"
       ],
       "license": "MIT",
-      "type": "plugin"
+      "category": "development"
     },
     {
       "name": "flutter-developer",
@@ -70,7 +70,7 @@
         "provider"
       ],
       "license": "MIT",
-      "type": "plugin"
+      "category": "development"
     },
     {
       "name": "rust-api-developer",
@@ -100,7 +100,7 @@
         "postgresql"
       ],
       "license": "MIT",
-      "type": "plugin"
+      "category": "development"
     },
     {
       "name": "rust-lib-developer",
@@ -132,7 +132,7 @@
         "defmt"
       ],
       "license": "MIT",
-      "type": "plugin"
+      "category": "development"
     }
   ]
 }

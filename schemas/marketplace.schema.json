@@ -138,17 +138,9 @@
           "type": "string",
           "description": "SPDX license identifier"
         },
-        "type": {
+        "category": {
           "type": "string",
-          "enum": [
-            "skill",
-            "command",
-            "agent",
-            "mcp-server",
-            "hook",
-            "lsp-server"
-          ],
-          "description": "Type of plugin"
+          "description": "Plugin category for organization"
         }
       }
     }
