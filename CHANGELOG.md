@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/modulabs-io/modulabs-claude-plugins/compare/v1.1.1...v1.2.0) (2026-01-24)
+
+
+### Features
+
+* add angular, rust-api, rust-lib plugins and update flutter ([56ed84c](https://github.com/modulabs-io/modulabs-claude-plugins/commit/56ed84c82ce8a2742385fffd043522deeacb69aa))
+
 ## [1.1.1](https://github.com/modulabs-io/modulabs-claude-plugins/compare/v1.1.0...v1.1.1) (2026-01-22)
 
 
