@@ -28,9 +28,12 @@ This is a **registry-only** repository. It does not contain plugin code - instea
 
 ## Available Plugins
 
-| Name | Description | Type | Repository |
-|------|-------------|------|------------|
-| [flutter-developer](https://github.com/modulabs-io/flutter-developer-plugin) | Comprehensive Flutter development plugin for Claude Code | plugin | [modulabs-io/flutter-developer-plugin](https://github.com/modulabs-io/flutter-developer-plugin) |
+| Name | Version | Description | Repository |
+|------|---------|-------------|------------|
+| [angular-developer](https://github.com/modulabs-io/angular-developer-plugin) | 1.1.1 | Angular 19+ development with Signals, zoneless, Material, Vitest, Storybook | [modulabs-io/angular-developer-plugin](https://github.com/modulabs-io/angular-developer-plugin) |
+| [flutter-developer](https://github.com/modulabs-io/flutter-developer-plugin) | 1.3.1 | Flutter desktop & mobile with Firebase, Supabase, Riverpod, Bloc | [modulabs-io/flutter-developer-plugin](https://github.com/modulabs-io/flutter-developer-plugin) |
+| [rust-api-developer](https://github.com/modulabs-io/rust-api-developer-plugin) | 1.1.0 | Rust REST (Axum) & gRPC (Tonic) with OpenTelemetry, Cloud Run | [modulabs-io/rust-api-developer-plugin](https://github.com/modulabs-io/rust-api-developer-plugin) |
+| [rust-lib-developer](https://github.com/modulabs-io/rust-lib-developer-plugin) | 1.1.0 | Rust cross-platform libraries for Flutter, WASM, Java, Go, .NET | [modulabs-io/rust-lib-developer-plugin](https://github.com/modulabs-io/rust-lib-developer-plugin) |
 
 ## Plugin Types
 

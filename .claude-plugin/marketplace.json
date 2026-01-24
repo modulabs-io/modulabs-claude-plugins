@@ -10,14 +10,45 @@
   },
   "plugins": [
     {
+      "name": "angular-developer",
+      "source": {
+        "source": "github",
+        "repo": "modulabs-io/angular-developer-plugin",
+        "ref": "v1.1.1"
+      },
+      "description": "Comprehensive Angular development plugin for Claude Code supporting Angular 19+ features including Signals, zoneless change detection, standalone components, Angular Material, Vitest testing, and Storybook. Pure frontend focus with browser development.",
+      "version": "1.1.1",
+      "author": {
+        "name": "Modulabs",
+        "email": "dev@modulabs.io"
+      },
+      "keywords": [
+        "angular",
+        "typescript",
+        "frontend",
+        "signals",
+        "zoneless",
+        "standalone-components",
+        "angular-material",
+        "vitest",
+        "storybook",
+        "pwa",
+        "ssr",
+        "ngrx",
+        "rxjs"
+      ],
+      "license": "MIT",
+      "type": "plugin"
+    },
+    {
       "name": "flutter-developer",
       "source": {
         "source": "github",
         "repo": "modulabs-io/flutter-developer-plugin",
-        "ref": "v1.1.0"
+        "ref": "v1.3.1"
       },
       "description": "Comprehensive Flutter development plugin for Claude Code - supports desktop (Windows, macOS, Linux) and mobile (iOS, Android) development with Firebase, Supabase, and all major state management solutions",
-      "version": "1.1.0",
+      "version": "1.3.1",
       "author": {
         "name": "Modulabs",
         "email": "dev@modulabs.io"
@@ -37,6 +68,68 @@
         "riverpod",
         "bloc",
         "provider"
+      ],
+      "license": "MIT",
+      "type": "plugin"
+    },
+    {
+      "name": "rust-api-developer",
+      "source": {
+        "source": "github",
+        "repo": "modulabs-io/rust-api-developer-plugin",
+        "ref": "v1.1.0"
+      },
+      "description": "Comprehensive Rust API development plugin for Claude Code - supports REST (Axum) and gRPC (Tonic) with OpenTelemetry observability, structured logging, and Cloud Run deployment",
+      "version": "1.1.0",
+      "author": {
+        "name": "Modulabs",
+        "email": "dev@modulabs.io"
+      },
+      "keywords": [
+        "rust",
+        "api",
+        "rest",
+        "grpc",
+        "axum",
+        "tonic",
+        "opentelemetry",
+        "tracing",
+        "cloud-run",
+        "tower",
+        "sqlx",
+        "postgresql"
+      ],
+      "license": "MIT",
+      "type": "plugin"
+    },
+    {
+      "name": "rust-lib-developer",
+      "source": {
+        "source": "github",
+        "repo": "modulabs-io/rust-lib-developer-plugin",
+        "ref": "v1.1.0"
+      },
+      "description": "Claude plugin for Rust library development targeting cross-platform use (Flutter, WASM, Java, Go, .NET, Electron) with performance focus, no_std support, and OpenTelemetry/defmt observability.",
+      "version": "1.1.0",
+      "author": {
+        "name": "Modulabs",
+        "email": "dev@modulabs.io"
+      },
+      "keywords": [
+        "rust",
+        "library",
+        "cross-platform",
+        "ffi",
+        "flutter",
+        "wasm",
+        "java",
+        "go",
+        "uniffi",
+        "electron",
+        "dotnet",
+        "no_std",
+        "opentelemetry",
+        "defmt"
       ],
       "license": "MIT",
       "type": "plugin"
