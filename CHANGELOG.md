@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/modulabs-io/modulabs-claude-plugins/compare/v1.2.0...v1.2.1) (2026-01-24)
+
+
+### Bug Fixes
+
+* replace type field with category to align with official Claude Code spec ([1a5b7a9](https://github.com/modulabs-io/modulabs-claude-plugins/commit/1a5b7a9d161952165a7f7ac3c9b33ac5a4f621eb))
+
 ## [1.2.0](https://github.com/modulabs-io/modulabs-claude-plugins/compare/v1.1.1...v1.2.0) (2026-01-24)
 
 
